@@ -90,6 +90,7 @@ h4 {
     width: 100%;
     padding: 100px 0px;
     background-color: rgb(129, 125, 125);
+    min-height: 100vh;
 }
 
 .about img {
@@ -138,6 +139,7 @@ h4 {
     background: #101010;
     width: 100%;
     padding: 100px 0px;
+    min-height: 100vh;
 }
 
 .skills h2 {
@@ -155,6 +157,7 @@ h4 {
     width: 100%;
     margin: 0;
     padding: 0;
+    padding-top: 80px;
     text-align: center;
 }
 
@@ -205,6 +208,7 @@ h4 {
 
 .hobbies {
     background: #bbbbbb;
+    min-height: 100vh;
 }
 
 .contact {

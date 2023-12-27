@@ -26,10 +26,13 @@ handleScroll();
 
 ScrollReveal({ 
     reset: true,
+    delay: 200,
+    duration: 2000,
+    distance: "80px",
 
 });
 
-ScrollReveal().reveal('.content h1', {delay: 200});
+ScrollReveal().reveal('.content h1', {origin: "left"});
 
 /*typed js*/
 const typed = new Typed('.typingjs', {
