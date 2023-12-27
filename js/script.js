@@ -1,3 +1,29 @@
+ // Get the navbar element
+ var navbar = document.getElementById("main-navbar");
+    
+// Get the initial offset of the navbar
+var offset = navbar.offsetTop;
+    
+// Function to handle scrolling
+function handleScroll() {
+    if (window.pageYOffset > offset) {
+        // Add a class to the navbar to make it fixed
+        navbar.classList.add("fixed-navbar");
+    } else {
+        // Remove the class when scrolled back to the top
+        navbar.classList.remove("fixed-navbar");
+    }
+}
+    
+// Attach the handleScroll function to the scroll event
+window.onscroll = function () {
+    handleScroll();
+};
+    
+// Call handleScroll on page load in case the page is initially scrolled
+handleScroll();
+
+
 ScrollReveal({ 
     reset: true,
 

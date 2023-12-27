@@ -8,7 +8,7 @@
 .hero {
     height: 100vh;
     width: 100%;
-    background-image: url(/img/Capture_2023-12-21_12.32.29.jpg);
+    background-image: url(/img/Hero.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -94,7 +94,8 @@ h4 {
 
 .about img {
     height: auto;
-    width: 430px;
+    width: 350px;
+    display: flex;
 }
 
 .about-text {
@@ -123,7 +124,6 @@ h4 {
     letter-spacing: 2px;
     font-size: 22px;
     margin-bottom: 25px;
-    text-transform: capitalize;
 }
 
 .about-text p {
@@ -167,7 +167,7 @@ h4 {
 }
 
 .card {
-    height: 365px;
+    height: 300px;
     width: 335px;
     padding: 20px 35px;
     background: #191919;
@@ -176,6 +176,11 @@ h4 {
     position: relative;
     overflow: hidden;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card img {
@@ -255,6 +260,67 @@ button:hover {
     background: #fff;
 }
 
+.colored-image {
+    filter: invert(100%);
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center ;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20%;
+}
+
+/* Social Media Icons Hover Animation */
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Social Media Icons Background Images */
+.instagram {
+    background-image: url('/img/instagram.svg');
+}
+
+.twitter {
+    background-image: url('/img/x-twitter.svg');
+}
+
+.discord {
+    background-image: url('/img/discord.svg');
+}
+
+.steam {
+    background-image: url('/img/steam.svg');
+}
+
+footer {
+    background-color: #101010;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
 /* Responsive Styles */
 
 @media only screen and (max-width: 480px) {
@@ -318,6 +384,14 @@ button:hover {
     .card {
         width: 100%;
     }
+
+    footer {
+        padding: 10px;
+    }
+
+    .footer-content {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -350,11 +424,19 @@ button:hover {
         padding: 80px 5%;
     }
 
+    .about img {
+        width: 200px;
+    }
+
     .about-text {
         max-width: 100%;
     }
 
     .card {
         width: 100%;
+    }
+
+    footer {
+        padding: 15px;
     }
 }
