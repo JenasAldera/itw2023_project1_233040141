@@ -297,19 +297,19 @@ button:hover {
 
 /* Social Media Icons Background Images */
 .instagram {
-    background-image: url('/img/instagram.svg');
+    background-image: url('../img/instagram.svg');
 }
 
 .twitter {
-    background-image: url('/img/x-twitter.svg');
+    background-image: url('../img/x-twitter.svg');
 }
 
 .discord {
-    background-image: url('/img/discord.svg');
+    background-image: url('../img/discord.svg');
 }
 
 .steam {
-    background-image: url('/img/steam.svg');
+    background-image: url('../img/steam.svg');
 }
 
 footer {
